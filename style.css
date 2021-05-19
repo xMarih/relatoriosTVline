@@ -1,0 +1,36 @@
+
+.cards{
+
+  background-color: rgb(255, 196, 0);
+  width: 30%;
+  color: #007cba;
+  background-color: #F2B33D;
+  
+    
+}
+#card{
+  padding-top: 50px;
+}
+.carousel-item{
+  height: 600px;
+  align-content: center;
+
+}
+#logo{
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+
+
+/* ***************** */
+
+
+.tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #F2B33D;
+    border-bottom:5px solid #F2B33D;
+    padding:30px 25px;
+}
