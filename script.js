@@ -14,6 +14,8 @@ function casamentos() {
     cards('casamento/tres-anos-casamento-quantidade-BH', "Casamentos em Belo Horizonte", "casamentoBH", "#cardsCasamento2", "casamentos");
     cards('casamento/tres-anos-casamento-quantidade-MG', "Casamentos em Minas Gerais", "casamentoMG", "#cardsCasamento1", "casamentos");
 }
+
+
 ////////////////////////////////////////////
 
 function cards(endereço, nomePagina, click, cards, tipoRelatorio) {
