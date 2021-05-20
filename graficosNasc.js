@@ -70,7 +70,7 @@ function graficosNasc() {
         }
         var ctx = document.getElementById('graficosNascBar').getContext('2d');
         chart = new Chart(ctx, {
-          type: 'bar',
+          type: 'line',
           data: {
             labels: vetMes.reverse(),
             datasets: [

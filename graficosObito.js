@@ -144,7 +144,7 @@ function graficosObito() {
 
         var ctx = document.getElementById('graficosObitoBar').getContext('2d');
         var chart = new Chart(ctx, {
-          type: 'bar',
+          type: 'line',
           data: {
            
             labels: vetMes.reverse(),

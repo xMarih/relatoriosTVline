@@ -12,7 +12,7 @@
   padding-top: 50px;
 }
 .carousel-item{
-  height: 600px;
+  height: 500px;
   align-content: center;
 
 }
@@ -30,7 +30,7 @@
   background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
-    border-top:5px solid #F2B33D;
-    border-bottom:5px solid #F2B33D;
+    border-top:5px solid #007cba;
+    border-bottom:5px solid #007cba;
     padding:30px 25px;
 }
