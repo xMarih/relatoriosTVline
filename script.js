@@ -35,18 +35,18 @@ function cards(endereço, nomePagina, click, cards, tipoRelatorio) {
                     var ano = request[i]["ano"];
                     var quantidadeDeRegistro = request[i]["quantidadeDeRegistro"];
 
-
                     cod_html +=
-                        `
-                        <div class="card" style="width: 32%; margin-left:1%; margin-bottom:1%; background-color: rgba(0, 140, 255, 0.336);">
-                            <div class="card-header" style=" margin:5px; background-color: rgba(0, 140, 255, 0.589);"><h5>Relatórios de ${tipoRelatorio}</h5></div>
-                            <div class="card-body">
-                                <h4 class="card-title">${nomePagina} em ${ano}</h4>
-                                <h2 class="card-text" style="text-align: right;">${quantidadeDeRegistro}</h2>
+                    `
+                    <div class="card" style="width: 32%; margin-left:1%; margin-bottom:1%; background-color: rgba(255, 202, 27, 0.4);">
+                        <div class="card-header" style="background-color: #F2B33D; margin:5px;"><h5>Relatórios de ${tipoRelatorio}</h5></div>
+                        <div class="card-body">
+                            <h4 class="card-title">${nomePagina} em ${ano}</h4>
+                            <h2 class="card-text" style="text-align: right;   color: #007cba;">${quantidadeDeRegistro}</h2>
 
-                            </div>
                         </div>
-                    `;
+                    </div>
+                `;
+
                 }
 
                 $(cards).html(cod_html);

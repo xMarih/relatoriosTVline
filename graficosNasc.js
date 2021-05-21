@@ -7,14 +7,14 @@ let url5 = urlBase + 'nascimento/tres-anos-nascimento-MG';
 let xhr5 = new XMLHttpRequest();
 xhr5.responseType = "json";
 xhr5.open('GET', url5, true);
-var nascimentoMG;
+var nascimentoMG = new Array(25);
 
 xhr5.onreadystatechange = function () {
   if (xhr5.readyState == 4) {
     if (xhr5.status == 200) {
       var request1 = xhr5.response;
-      nascimentoMG = new Array(request1.length);
-      for (i = 1; i < request1.length; i++) {
+      
+      for (i = 1; i < 25; i++) {
         nascimentoMG[i] = parseFloat((request1[i]["quantidadeDeRegistro"]).replace('.', ''))
       }
     }
@@ -30,15 +30,15 @@ let url6 = urlBase + 'nascimento/tres-anos-nascimento-BH';
 let xhr6 = new XMLHttpRequest();
 xhr6.responseType = "json";
 xhr6.open('GET', url6, true);
-var nascimentoBH;
+var nascimentoBH = new Array(25);
 
 xhr6.onreadystatechange = function () {
   if (xhr6.readyState == 4) {
     if (xhr6.status == 200) {
       var request2 = xhr6.response;
-      nascimentoBH = new Array(request2.length);
+      
 
-      for (i = 1; i < request2.length; i++) {
+      for (i = 1; i < 25; i++) {
         nascimentoBH[i] = parseFloat((request2[i]["quantidadeDeRegistro"]).replace('.', ''))
       }
     }

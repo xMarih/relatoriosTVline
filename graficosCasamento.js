@@ -7,14 +7,15 @@ let url7 = urlBase + 'casamento/tres-anos-casamento-MG';
 let xhr7 = new XMLHttpRequest();
 xhr7.responseType = "json";
 xhr7.open('GET', url7, true);
-var casamentoMG;
+var casamentoMG = new Array(25);
 
 xhr7.onreadystatechange = function () {
   if (xhr7.readyState == 4) {
     if (xhr7.status == 200) {
       var request7 = xhr7.response;
-      casamentoMG = new Array(request7.length);
-      for (i = 1; i < request7.length; i++) {
+      
+
+      for (i = 1; i < 25; i++) {
         casamentoMG[i] = parseFloat((request7[i]["quantidadeDeRegistro"]).replace('.', ''))
       }
     }
@@ -30,15 +31,15 @@ let url8 = urlBase + 'casamento/tres-anos-casamento-BH';
 let xhr8 = new XMLHttpRequest();
 xhr8.responseType = "json";
 xhr8.open('GET', url8, true);
-var casamentoBH;
+var casamentoBH = new Array(25);
 
 xhr8.onreadystatechange = function () {
   if (xhr8.readyState == 4) {
     if (xhr8.status == 200) {
       var request8 = xhr8.response;
-      casamentoBH = new Array(request8.length);
+      
 
-      for (i = 1; i < request8.length; i++) {
+      for (i = 1; i < 25; i++) {
         casamentoBH[i] = parseFloat((request8[i]["quantidadeDeRegistro"]).replace('.', ''))
       }
     }
